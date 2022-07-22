@@ -9,10 +9,7 @@ const Trigger = ({ handleChange }) => {
     handleChange(alert);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [alert]);
-
-  const handleEventChange = (event) => {
-    setAlert(event.target.value);
-  };
+  
   return (
     <Fragment>
       <FormControl fullWidth>
@@ -22,7 +19,7 @@ const Trigger = ({ handleChange }) => {
           id="demo-simple-select"
           label="Age"
           value={alert}
-          onChange={handleEventChange}
+          onChange={(e) => setAlert(e.target.value)}
         >
           <MenuItem value={""}>Default</MenuItem>
           <MenuItem value={"info"}>Info</MenuItem>
