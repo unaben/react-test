@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import MyAlert from "./components/MyAlert";
+import MyAlert from "./components/myAlertComp/MyAlert";
 import { Stack, Typography } from "@mui/material";
-import Trigger from "./components/Trigger";
+import Trigger from "./components/triggerComp/Trigger";
 
 const App = () => {
   const [warning, setWarning] = useState(false);
