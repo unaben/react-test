@@ -5,8 +5,7 @@ const useHandleChange = () => {
   const [info, setInfo] = useState(false);
   const [error, setError] = useState(false); 
 
-  const handleChange = (value) => {
-    console.log("inside func", value);
+  const handleChange = (value) => {   
     value === "warning" ? setWarning(true) : setWarning(false);
     value === "info" ? setInfo(true) : setInfo(false);
     value === "error" ? setError(true) : setError(false);

@@ -5,8 +5,7 @@ import useHandleChange from "../hooks/useHandleChange";
 
 const Trigger = ({ handleChange }) => {
   const [alert, setAlert] = useState("");
-  console.log("state", alert);
-
+  
   useEffect(() => {
     handleChange(alert);
     // eslint-disable-next-line react-hooks/exhaustive-deps

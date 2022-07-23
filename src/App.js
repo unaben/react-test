@@ -5,7 +5,8 @@ import Trigger from "./components/triggerComp/Trigger";
 import useHandleChange from "./components/hooks/useHandleChange";
 
 const App = () => {
-  const { warning, info, error, handleChange } = useHandleChange(); 
+  const { warning, info, error, handleChange } = useHandleChange();
+
   return (
     <>
       <Stack sx={{ width: "600px", padding: "20px" }} spacing={2}>
@@ -31,7 +32,7 @@ const App = () => {
             content={"This is an error message"}
           />
         )}
-        <Trigger handleChange={handleChange} />       
+        <Trigger handleChange={handleChange} />
       </Stack>
     </>
   );
