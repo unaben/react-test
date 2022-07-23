@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import useHandleChange from "../hooks/useHandleChange";
 
 const Trigger = ({ handleChange }) => {
   const [alert, setAlert] = useState("");
+  console.log("state", alert);
 
   useEffect(() => {
     handleChange(alert);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [alert]);
-  
+
   return (
     <Fragment>
       <FormControl fullWidth>

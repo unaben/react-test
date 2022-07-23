@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import MyAlert from "./components/myAlertComp/MyAlert";
 import { Stack, Typography } from "@mui/material";
 import Trigger from "./components/triggerComp/Trigger";
+import useHandleChange from "./components/hooks/useHandleChange";
 
 const App = () => {
-  const [warning, setWarning] = useState(false);
-  const [info, setInfo] = useState(false);
-  const [error, setError] = useState(false);
-
-  const handleChange = (value) => {
-    value === "warning" ? setWarning(true) : setWarning(false);
-    value === "info" ? setInfo(true) : setInfo(false);
-    value === "error" ? setError(true) : setError(false);
-  };
-
+  const { warning, info, error, handleChange } = useHandleChange(); 
   return (
     <>
       <Stack sx={{ width: "600px", padding: "20px" }} spacing={2}>
@@ -39,7 +31,7 @@ const App = () => {
             content={"This is an error message"}
           />
         )}
-        <Trigger handleChange={handleChange} />
+        <Trigger handleChange={handleChange} />       
       </Stack>
     </>
   );
