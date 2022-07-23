@@ -7,7 +7,7 @@ const Trigger = ({ handleChange }) => {
   const [alert, setAlert] = useState("");
   
   useEffect(() => {
-    handleChange(alert);
+    handleChange(alert);   
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [alert]);
 

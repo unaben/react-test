@@ -5,7 +5,7 @@ import Trigger from "./components/triggerComp/Trigger";
 import useHandleChange from "./components/hooks/useHandleChange";
 
 const App = () => {
-  const { warning, info, error, handleChange } = useHandleChange();
+const {warning, info, error, handleChange} = useHandleChange()
 
   return (
     <>
