@@ -1,7 +1,7 @@
-import React from "react";
-import MyAlert from '../myAlertComp/MyAlert'
+import MyAlert from "../myAlertComp/MyAlert";
 
-const RenderAlert = ({warning, info, error}) => {
+const RenderAlert = (props) => {
+  const { warning, info, error } = props;
   return (
     <div>
       {warning && (

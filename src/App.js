@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Stack, Typography } from "@mui/material";
 import Trigger from "./components/triggerComp/Trigger";
 import useHandleChange from "./components/hooks/useHandleChange";

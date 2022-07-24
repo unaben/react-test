@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import useHandleChange from "../hooks/useHandleChange";
 
 const Trigger = ({ handleChange }) => {
   const [alert, setAlert] = useState("");
